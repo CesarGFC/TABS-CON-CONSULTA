@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      INACTIVOS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+      <div *ngFor="let student of students">
+          <div *ngIf="!student.active">
+            <strong> {{student.name}} </strong>
+            <h3>{{student.controlnumber}}</h3>
+          </div>
+      </div>
+</ion-content>
